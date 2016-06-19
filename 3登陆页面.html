@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/登陆.css"/>
+</head>
+<body>
+<div class="login" id="login">
+
+    <div class="login_tab">
+        <ul class="tab_list">
+            <li class="list_item _list_item_qq current" data-type="qq"><a href="javascript:void(0);"
+                                                                          class="tab_item tab_item_qq"><span
+                    class="item_inner">QQ帐号登录</span></a></li>
+            <li class="list_item _list_item_wx" data-type="wx"><a href="javascript:void(0);"
+                                                                  class="tab_item tab_item_wx"><span class="item_inner">微信帐号登录</span></a>
+            </li>
+        </ul>
+    </div>
+    <div class="header"></div>
+    <div id="qqLoad">
+        <div class="qrlogin" id="qrlogin"><label class="qr_title">安全登录，防止被盗</label>
+
+            <div class="qr_img_box" id="qr_img_box"><img id="qr_img" class="qr_img" src="img2/ptqrshow.png">
+                <span id="qr_img_logo" class="qr_img_logo"></span> <span id="qr_invalid" class="qr_invalid"
+                                                                         style="display: block;"><span id="qr_mengban"
+                                                                                                       class="qr_mengban"></span> <span
+                        id="qr_invalid_tips" class="qr_invalid_tips">二维码失效<br>请点击刷新</span></span></div>
+            <div class="qr_info"><a class="qr_info_link" id="qr_info_link" href="http://im.qq.com/mobileqq/#from=login"
+                                    target="_blank" tabindex="13">使用QQ手机版扫描二维码</a></div>
+            <div class="split_line"></div>
+        </div>
+        <div class="other_login" id="other_login">
+            <div id="loginTips" class="loginTips"><span class="qloginTips" id="qloginTips" href="javascript:void(0);"
+                                                        style="display: block;">点击头像快速登录</span>
+
+            </div>
+            <div class="qlogin" id="qlogin">
+                <div class="qlogin_show" id="qlogin_show">
+                    <div class="qlogin_list" id="qlogin_list">
+                        <a href="二级.html" class="face"> <img id="img_475161563" src="img2/g.jpg" alt=""/></a>
+                        <span class="uin">475161563</span>
+                        <span id="nick_475161563" class="nick">风行水上</span>
+
+                    </div>
+                </div>
+                <a class="switcher_plogin" href="javascript:void(0);" tabindex="8">使用帐号密码登录</a>
+            </div>
+        </div>
+        <div class="firstHide">
+            <div class="mainbox">
+                <div class="desc">
+                    <h2> 在网吧等公共环境可能导致帐号密码泄漏，</br>
+                        使用 <a id="title0" href="">QQ手机版扫码登录，</a>更安全。</h2>
+                </div>
+                <div class="error_tips" id="error_tips"><span class="error_logo" id="error_logo"></span> <span
+                        class="err_m" id="err_m"></span>
+                </div>
+                <div id="form">
+                    <input id="input1" type="text" value="支持QQ号/邮箱/手机号登陆"/>
+                    <input id="input2" type="password" maxlength="16">
+
+                    <p class="ss" id="ss">密码</p>
+
+                    <div id="submit">
+                        <a href="javascript:void 0">
+                            <input id="last" type="button" value="登陆"/></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="bottom" id="bottom">
+            <a href="javascript:void 0" class="link" target="_blank" tabindex="11">注册新帐号</a> <span
+                class="dotted">|</span>
+            <a class="link" id="feedback_qlogin" target="_blank" tabindex="12">意见反馈</a>
+            <a href="" class="point display"></a>
+            <label class="low_login_wording" id="q_low_login_wording">下次自动登录</label>
+
+        </div>
+
+        <div class="show" id="show">
+            <img src="img2/big_24_tiny.png" alt=""/>
+        </div>
+    </div>
+    <div class="secondHide">
+        <div class="secondC">
+            <div class="S1">安全登录，防止被盗</div>
+            <div class="S2"><img class="sImg" src="img2/code.jpg" alt=""/></div>
+            <div class="S3">请使用微信扫描二维码登录</br>
+                “腾讯视频微信登录”
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+<script src="js/DOM.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/zhufengTween.js"></script>
+<script src="js/js3.js"></script>

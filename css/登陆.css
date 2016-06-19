@@ -1,0 +1,507 @@
+html {
+    overflow: hidden
+}
+body {
+    font-family: 宋体, Tahoma, Verdana, Arial;
+    font-size: 12px;
+    color: gray;
+    margin: 0;
+    background: #fefefe
+}
+ul {
+    padding: 0;
+    margin: 0
+}
+ul li {
+    list-style-type: none
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    outline: 0
+}
+a:hover {
+    text-decoration: underline
+}
+.login {
+    width: 620px;
+    border: 1px solid #b1b3b4;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden
+}
+.header {
+    height: 50px;
+    border-bottom: 0;
+    position: relative;
+    z-index: 1001
+}
+.other_login {
+    float: left;
+    width: 352px;
+}
+.other_login .loginTips {
+    height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative
+}
+.other_login.other_login .qloginTips {
+    display: none;
+    width: 100%;
+    text-align: center
+}
+.plogin .email_list li, .plogin .email_list p {
+    height: 31px;
+    line-height: 31px;
+    margin: 0;
+    overflow: hidden;
+    padding-left: 10px
+}
+.plogin .email_list p {
+    height: 16px;
+    line-height: 10px
+}
+.qlogin {
+    height: 178px;
+    width: 300px;
+    position: relative;
+    margin: 0 auto;
+}
+.qlogin .qlogin .qlogin_show {
+    width: 240px;
+    height: 130px;
+    position: absolute;
+    left: 30px;
+    top: 18px;
+    overflow: hidden
+}
+.qlogin .qlogin_list {
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    margin: 0 100px;
+}
+.qlogin .prePage {
+    width: 30px;
+    height: 120px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    text-align: center;
+    display: none
+}
+.qlogin .nextPage {
+    width: 30px;
+    height: 120px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    text-align: center;
+    display: none
+}
+.qlogin .preRow {
+    width: 16px;
+    height: 35px;
+    display: inline-block;
+    margin-top: 35px;
+    background: url(../img2/icon_3_tiny.png ) no-repeat -181px -185px;
+    /*_background: url(img2/c_icon_2_tiny.png) no-repeat -181px -185px;*/
+    cursor: pointer
+}
+.qlogin .prePage:hover .preRow {
+    background-position: -181px -228px
+}
+.qlogin .nextRow {
+    width: 16px;
+    height: 35px;
+    display: inline-block;
+    margin-top: 35px;
+    background: url(../img2/icon_3_tiny.png ) no-repeat -201px -185px;
+    _background: url(img2/c_icon_2_tiny.png) no-repeat -201px -185px;
+    cursor: pointer
+}
+
+.qlogin .face img {
+    width: 80px;
+    height: 80px;
+    border: 0;
+    position: relative;
+    top: 5px;
+}
+
+.bottom {
+    text-align: right;
+    font-size: 12px;
+    clear: both;
+    position: relative;
+    height: 46px;
+    line-height: 46px;
+    padding-right: 10px;
+    z-index: 1002
+}
+
+.bottom .link {
+    color: gray
+}
+
+.bottom .dotted {
+    color: #bfbfbf;
+    margin: 0 5px
+}
+
+.qrlogin {
+    width: 265px;
+    height: 270px;
+    float: left;
+    position: relative;
+}
+
+.qrlogin .qr_title {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold
+}
+
+.qrlogin .qr_img_box {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50px;
+    left: 57px
+}
+
+.qrlogin .qr_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 149px;
+    height: 149px;
+    border: 1px solid #d3d3d3
+}
+
+.qrlogin .qr_img_logo {
+    position: absolute;
+    width: 42px;
+    height: 47px;
+    top: 54px;
+    left: 54px;
+    background: url(img2/c_icon_2_tiny.png) no-repeat -156px -473px;
+}
+
+.qrlogin .qr_invalid {
+    display: none;
+    width: 150px;
+    height: 150px;
+    left: 1px;
+    top: 1px;
+    position: absolute;
+    cursor: pointer
+}
+
+.qrlogin .qr_mengban {
+    background: #000;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: Alpha(opacity=50);
+    opacity: .5
+}
+
+.qrlogin .qr_invalid_tips {
+    color: #fff;
+    left: 0;
+    line-height: 20px;
+    position: absolute;
+    text-align: center;
+    top: 55px;
+    width: 150px;
+    cursor: pointer
+}
+
+.qrlogin .qr_info {
+    bottom: 20px;
+    position: absolute;
+    text-align: center;
+    width: 100%
+}
+
+.qrlogin .qr_info_link {
+    text-decoration: none;
+    display: inline-block;
+    width: 152px;
+    height: 30px;
+    line-height: 30px;
+    color: gray;
+    _background: url(img2/c_icon_2_tiny.png) no-repeat 0 -474px
+}
+
+.qrlogin .qr_info_link:hover {
+    background-position: 0 -506px;
+    text-decoration: none
+}
+
+.face {
+    display: block;
+    width: 88px;
+    height: 88px;
+    position: relative;
+    background: url(img2/c_icon_2_tiny.png) no-repeat -91px -183px;
+}
+
+.uin {
+    display: none;
+    position: relative;
+    background-color: rgba(0, 0, 0, .4);
+    width: 80px;
+    top: -17px;
+    left: 4px;
+}
+
+.nick {
+    width: 50px;
+    display: block;
+    position: absolute;
+    top: 120px;
+    left: 15px;
+}
+
+.qlogin_show {
+    width: 100%;
+    height: 100%
+}
+
+.point {
+    width: 16px;
+    height: 16px;
+    display: block;
+    float: left;
+    margin-left: 295px;
+    margin-top: 17px;
+}
+
+.display {
+    background: url(img2/c_icon_2_tiny.png) no-repeat -228px -250px;
+    line-height: 46px;
+}
+
+.low_login_wording {
+    float: left;
+    height: 14px;
+    color: #b5bbc1;
+    cursor: pointer;
+    line-height: 46px;
+}
+
+.show {
+    position: absolute;
+    top: 50px;
+    left: 240px;
+    display: none;
+    opacity: 0
+}
+
+.switcher_plogin {
+    margin-left: 95px;
+    text-align: center;
+    color: #579feb;
+}
+
+.login_tab .list_item {
+    display: inline-block;
+    zoom: 1;
+    width: 50%;
+    text-align: center;
+}
+
+li {
+    vertical-align: top;
+}
+
+.login_tab .list_item .tab_item {
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    color: #adadad;
+}
+
+.login_tab .list_item {
+    display: inline-block;
+    zoom: 1;
+    width: 49%;
+    text-align: center;
+}
+
+.login_tab .current .tab_item_wx {
+    border-bottom-color: #4ab218;
+}
+
+.login_dialog .login_tab .current .tab_item {
+    height: 49px;
+    border-bottom: 2px solid #999;
+    margin-bottom: -2px;
+    color: #000;
+}
+
+.login_dialog .login_tab .list_item .tab_item {
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    color: #adadad;
+}
+
+a:visited, a[tabindex='-1']:focus {
+    outline: 0 none;
+    color: #2a2a2a;
+    text-decoration: none;
+}
+
+.login_dialog .login_tab .list_item .tab_item {
+    line-height: 50px;
+    font-size: 16px;
+    color: #adadad;
+}
+
+.tab_list {
+    margin-bottom: -1px;
+    border: 1px solid #b1b3b4;
+    border-bottom-color: #e6e6e6;
+    background: #f1f1f1;
+}
+
+.header {
+    height: 50px;
+    border-bottom: 0;
+    position: relative;
+    z-index: 1001;
+}
+
+.current {
+    border-bottom: 2px solid greenyellow
+}
+
+.firstHide {
+    position: relative;
+    display: none
+}
+
+.desc {
+    text-align: center
+}
+
+input {
+    display: block;
+    outline: none;
+    position: relative;
+    line-height: 16px;
+    padding: 10px;
+    padding-right: 0;
+    margin-bottom: 15px;
+    width: 255px;
+    border-radius: 5px;
+    color: #AEADAE;
+    border: 1px solid #AEADAE
+}
+
+#title0 {
+    color: #00A5FF
+}
+
+#form {
+    margin: 30px auto;
+    width: 275px;
+    text-align: center;
+}
+
+#last {
+    width: 265px;
+    background-color: lightgreen;
+    color: #252525
+}
+
+#qqLoad {
+    display: block
+}
+
+/*微信登陆*/
+.secondHide {
+    display: none
+}
+
+.sImg {
+    display: block;
+    width: 148px;
+    height: 148px;
+    border: 1px solid #AEADAE
+}
+
+.S2 {
+    width: 150px;
+    margin: 20px auto
+}
+
+.S3 {
+    width: 230px;
+    background-color: #ebebeb;
+    border-radius: 8px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.S1 {
+    width: 150px;
+    background-color: #AEADAE;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 5px
+}
+
+.error_tips {
+    display: none;
+    position: absolute;
+    width: 258px;
+    left: 50%;
+    margin-left: -129px;
+    z-index: 1000;
+    top: 45px;
+}
+
+.error_logo {
+    position: absolute;
+    left: 3px;
+    height: 18px;
+    line-height: 18px;
+    width: 18px;
+    background: url(img2/icon_3_tiny.png) no-repeat 0 -162px;
+}
+
+.err_m {
+    display: inline-block;
+    padding-left: 20px;
+    line-height: 18px;
+    color: #ff3b30;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.ss {
+    position: absolute;
+    top: 125px;
+    left: 185px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #aaa;
+    cursor: text;
+}
